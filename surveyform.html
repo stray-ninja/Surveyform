@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" type="text/css" href="surveyform.css">
+    </head>
+    <body>
+         <header>
+               <h1  id="title">Survey Form</h1>
+               <p id="description">Please help us grow!</p>
+            </header>
+         <main>
+             <div>
+                <form id="survey-form">
+                <div class="survey-area">
+                <label id="name-label" for="name">Name</label><br>
+                <input id="name" type="text" placeholder="Enter your Name" required>
+                </div>
+
+                <div class="survey-area">
+                <label id="email-label" for="email">Email</label><br>
+                <input id="email" type="email" placeholder="Enter your Email" required><br>
+                 </div>
+
+                 <div class="survey-area">
+                <label id="number-label" for="number">Age (optional)</label><br>
+                <input id="number" min="1" max="111" type="number" placeholder="Age"><br>
+                 </div>
+
+                 <div class="survey-area">
+                <label for="dropdown">Who is your favourite Buffy character?</label> <br>
+                <select name="dropdown" id="dropdown" style="height:2.5em;">
+                    <option value="Buffy">Buffy</option>
+                    <option value="Willow">Willow</option>
+                    <option value="Xander">Xander</option>
+                    <option value="Giles">Giles</option>
+                    <option value="Cordelia">Cordelia</option>
+                    <option value="Oz">Oz</option>
+                    <option value="Spike">Spike</option>
+                    <option value="Angel">Angel</option>
+                    <option value="Drusilla">Drusilla</option>
+                </select><br>
+                 </div>
+
+                 <div class="survey-area">
+                 <label for="fellowfans">Would you recommend our website to fellow fans?</label><br>
+                 <div>
+                 <input name="fellowfans" id="yes" type="radio" value="yes">
+                 <label for="yes">Yes</label>
+                </div>
+                <div>
+                <input name="fellowfans" id="no" type="radio" value="no">
+                <label for="no">No</label>
+                </div>
+                <div> 
+                <input name="fellowfans" id="maybe" type="radio" value="maybe">
+                <label for="maybe">Maybe</label>
+                 </div>
+                </div>
+
+                <div class="survey-area">
+                <label for="checkbox">Which areas could be improved?</label><br>
+                <div>
+                <input type="checkbox" id="characters" value="characters">
+                <label for="characters">Characters</label>
+                </div>
+                <div>
+                <input type="checkbox" id="gallery" value="gallery">
+                <label for="gallery">Gallery</label>
+                </div>
+                <div>
+                <input type="checkbox" id="forum" value="forum">
+                <label for="forum">Forum</label>
+                </div>
+                </div>
+
+                <div class="survey-area">
+                <label for="textarea">Anything else you'd like to share with us?</label><br>
+                <textarea name="textarea" id="textarea" cols="30" rows="5"></textarea><br>
+                </div>
+                <div class="survey-area">
+                <button id="submit">Submit</button>
+                </form>
+                </div>
+            </main>
+
+    </body>
+</html>
